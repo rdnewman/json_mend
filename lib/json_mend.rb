@@ -1,5 +1,8 @@
 require "json_mend/version"
+require "json_mend/mender"
 
 module JsonMend
-  # Your code goes here...
+  def JsonMend.mend(string)
+    JsonMend::Mender.new(string).mend
+  end
 end
